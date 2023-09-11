@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="submit.php" method="POST">
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>Input</th>
+        </tr>
+        <tr>
+          <td>Full Name:</td>
+          <td><input type="text" id="fullname" name="fullname" required /></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" id="lastname" name="lastname" required /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input type="password" id="password" name="password" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Re-enter Password:</td>
+          <td>
+            <input type="password" id="repassword" name="repassword" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" id="age" name="age" required /></td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td><input type="tel" id="phone" name="phone" required /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td>
+            <textarea
+              id="address"
+              name="address"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>State:</td>
+          <td><input type="text" id="state" name="state" required /></td>
+        </tr>
+        <tr>
+          <td>Country (Asia):</td>
+          <td>
+            <select id="country" name="country" required>
+              <option value="India">India</option>
+              <option value="China">China</option>
+              <!-- Add other Asian countries here -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Languages:</td>
+          <td>
+            <input
+              type="checkbox"
+              id="english"
+              name="languages[]"
+              value="English"
+            />
+            <label for="english">English</label>
+            <input
+              type="checkbox"
+              id="kannada"
+              name="languages[]"
+              value="Kannada"
+            />
+            <label for="kannada">Kannada</label>
+            <input
+              type="checkbox"
+              id="hindi"
+              name="languages[]"
+              value="Hindi"
+            />
+            <label for="hindi">Hindi</label>
+            <input
+              type="checkbox"
+              id="telugu"
+              name="languages[]"
+              value="Telugu"
+            />
+            <label for="telugu">Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Declaration:</td>
+          <td>
+            <input
+              type="checkbox"
+              id="declaration"
+              name="declaration"
+              required
+            />
+            <label for="declaration"
+              >I hereby declare that all the given details are true.</label
+            >
+          </td>
+        </tr>
+      </table>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

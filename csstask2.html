@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Navigation Menu</title>
+    <style>
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 600px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="home.html" style="background-color: orange">Home</a>
+      <a href="java.html">Java</a>
+      <a href="css.html">CSS</a>
+      <a href="html.html">HTML</a>
+      <a href="bootstrap.html">Bootstrap</a>
+    </div>
+  </body>
+</html>

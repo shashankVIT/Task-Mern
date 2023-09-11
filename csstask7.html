@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      /* Basic CSS for the registration form */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #da15c6; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: rgb(146, 10, 117);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      /* Style for the table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #170b0b;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      /* Style for input fields and labels */
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("arrow-down.png") no-repeat right;
+        background-size: 20px;
+      }
+
+      /* Style for gender options */
+      .gender-label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      /* Style for language checkboxes */
+      .language-label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      /* Style for the "I declare" checkbox */
+      .declare-label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      /* Style for the submit button */
+      button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <table>
+          <tr>
+            <td><label for="fullname">Full Name:</label></td>
+            <td>
+              <input type="text" id="fullname" name="fullname" required />
+            </td>
+          </tr>
+        
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirm_password">Re-enter Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <label class="gender-label"
+                ><input type="radio" name="gender" value="male" /> Male</label
+              >
+              <label class="gender-label"
+                ><input type="radio" name="gender" value="female" />
+                Female</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" id="age" name="age" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" id="phone" name="phone" required /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td>
+              <textarea
+                id="address"
+                name="address"
+                rows="3"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zipcode">Zip code:</label></td>
+            <td><input type="text" id="zipcode" name="zipcode" required /></td>
+          </tr>
+          <tr>
+            <td><label for="language">Language:</label></td>
+            <td>
+              <select id="Language" name="Language" required>
+                <option value="" disabled selected>select language</option>
+               
+                <option value="hindi">Hindi</option>
+                <option value="English">English</option>
+                
+              </select>
+              <tr>
+                <td><label for="about"> About:</label></td>
+                <td>
+                  <input type="text" id="About" name="About" required />
+                </td>
+              </tr>
+         
+          </tr>
+        </table>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
